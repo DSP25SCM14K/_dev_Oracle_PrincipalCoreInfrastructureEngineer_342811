@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#070b13">
+  <meta name="description" content="Dev Kumar — high-performance networking, systems engineering, and resilient cloud infrastructure.">
+  <title>Dev Kumar — Fast paths. Resilient networks.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=6">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="wordmark" href="#top" aria-label="Dev Kumar home"><span class="wordmark-mark">DK</span><span>DEV KUMAR</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#systems">Systems</a><a href="#experience">Experience</a><a href="#projects">Projects</a>
+    </nav>
+    <a class="contact-link" href="https://github.com/devthedevil" target="_blank" rel="noreferrer">Let’s talk <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-image" aria-hidden="true"></div>
+      <div class="hero-wash" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="eyebrow"><span class="live-dot"></span> CHICAGO, IL <span class="eyebrow-slash">/</span> HIGH-PERFORMANCE NETWORKING <span class="eyebrow-slash">/</span> SYSTEMS ENGINEERING</p>
+        <h1 id="hero-title">Fast paths.<br><span class="accent-text">Resilient networks.</span></h1>
+        <p class="hero-lede">I build the systems beneath dependable cloud networking: fast packet paths, strong tenant boundaries, and services that stay predictable through failure.</p>
+        <div class="hero-rotator" aria-live="polite"><span class="rotator-label">FOCUS</span><span id="rotating-text">High-performance dataplanes</span><span class="rotator-cursor">_</span></div>
+        <div class="hero-actions"><a class="button button-primary" href="#experience">Explore the work <span>↓</span></a><a class="button button-quiet" href="https://github.com/devthedevil" target="_blank" rel="noreferrer">GitHub <span>↗</span></a></div>
+      </div>
+      <div class="hero-caption mono"><span>CLOUD NETWORK FABRIC / 01</span><span>INGRESS → PROCESS → RECOVER</span></div>
+      <a class="scroll-cue mono" href="#signal">SCROLL TO EXPLORE <span>↓</span></a>
+      <div class="hero-index mono">01—05</div>
+    </section>
+
+    <section id="signal" class="signal-section section-wrap">
+      <div class="section-heading reveal"><p class="eyebrow">01 <span class="eyebrow-slash">/</span> THE SIGNAL</p><h2>Engineering, measured<br>in outcomes.</h2></div>
+      <div class="metrics-grid">
+        <article class="metric-card reveal"><span class="metric-value">12 Mpps</span><span class="metric-label">PER CORE</span><p>3.2× packet-processing throughput, with p99 latency below 20 µs.</p><span class="metric-rule"></span></article>
+        <article class="metric-card reveal"><span class="metric-value">99.99%</span><span class="metric-label">AVAILABILITY</span><p>Resilience through partitions, brownouts, replication, and automatic failover.</p><span class="metric-rule"></span></article>
+        <article class="metric-card reveal"><span class="metric-value">−45%</span><span class="metric-label">MEAN TIME TO RECOVERY</span><p>Operational signals and incident practice made diagnosis faster.</p><span class="metric-rule"></span></article>
+        <article class="metric-card reveal"><span class="metric-value">70%</span><span class="metric-label">LESS PACKET LOSS</span><p>Kernel and NIC tuning for industrial gateway telemetry.</p><span class="metric-rule"></span></article>
+      </div>
+      <p class="metric-note mono">SELECTED RESULTS FROM PRODUCTION SYSTEMS <span>·</span> DETAILS IN EXPERIENCE</p>
+      <p class="metric-note mono">SELECTED RESULTS FROM PRODUCTION SYSTEMS <span>·</span> DETAILS IN EXPERIENCE</p>
+    </section>
+
+    <section id="systems" class="systems-section section-wrap">
+      <div class="section-heading reveal"><p class="eyebrow">02 <span class="eyebrow-slash">/</span> THE PACKET PATH</p><h2>Move traffic quickly.<br>Keep behavior predictable.</h2><p class="section-intro">A production dataplane has to make every packet count: classify flows efficiently, preserve tenant boundaries, and reveal when the network needs attention.</p></div>
+      <div class="systems-layout">
+        <div class="loop-panel reveal">
+          <div class="loop-top mono"><span>VIRTUAL NETWORK DATAPLANE</span><span class="loop-status"><i></i><span id="loop-status">FLOW HEALTHY</span></span></div>
+          <div class="loop-graphic" aria-label="Interactive virtual networking dataplane diagram">
+            <svg class="loop-lines" viewBox="0 0 720 420" role="img" aria-label="Packets move from ingress through flow classification and tenant-isolated forwarding, with telemetry and recovery signals">
+              <defs><linearGradient id="lineGlow" x1="0" x2="1"><stop stop-color="#35d9f4"/><stop offset="1" stop-color="#6e8cff"/></linearGradient><filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+              <path class="loop-path" d="M170 112 C270 48 414 48 520 112"/><path class="loop-path" d="M574 151 C621 211 612 267 565 309"/><path class="loop-path" d="M489 344 C387 394 270 390 174 331"/><path class="loop-path" d="M116 292 C69 231 81 168 126 133"/>
+              <path class="loop-dash" d="M170 112 C270 48 414 48 520 112"/><path class="loop-dash" d="M574 151 C621 211 612 267 565 309"/><path class="loop-dash" d="M489 344 C387 394 270 390 174 331"/><path class="loop-dash" d="M116 292 C69 231 81 168 126 133"/>
+              <g class="diagram-node node-a"><rect x="62" y="72" width="160" height="82" rx="14"/><circle cx="85" cy="98" r="5"/><text x="102" y="102" class="node-kicker">01 / RECEIVE</text><text x="82" y="129" class="node-title">Packet ingress</text></g>
+              <g class="diagram-node node-b"><rect x="480" y="72" width="174" height="82" rx="14"/><circle cx="503" cy="98" r="5"/><text x="520" y="102" class="node-kicker">02 / CLASSIFY</text><text x="500" y="129" class="node-title">Flow sharding</text></g>
+              <g class="diagram-node node-c"><rect x="480" y="274" width="174" height="82" rx="14"/><circle cx="503" cy="300" r="5"/><text x="520" y="304" class="node-kicker">03 / FORWARD</text><text x="500" y="331" class="node-title">Isolated paths</text></g>
+              <g class="diagram-node node-d"><rect x="62" y="274" width="178" height="82" rx="14"/><circle cx="85" cy="300" r="5"/><text x="102" y="304" class="node-kicker">04 / OBSERVE</text><text x="82" y="331" class="node-title">Health &amp; recovery</text></g>
+              <g class="center-readout"><circle cx="356" cy="213" r="68"/><circle class="center-orbit" cx="356" cy="213" r="88"/><text x="356" y="207" text-anchor="middle" class="center-small">DATA PLANE</text><text x="356" y="232" text-anchor="middle" class="center-big">12 Mpps / CORE</text></g>
+              <circle class="packet packet-one" r="5"><animateMotion dur="6s" repeatCount="indefinite" path="M170 112 C270 48 414 48 520 112 C621 211 612 267 565 309 C387 394 270 390 174 331 C69 231 81 168 126 133 C140 125 154 117 170 112"/></circle>
+            </svg>
+          </div>
+          <div class="loop-controls"><button class="loop-button active" data-mode="nominal" aria-pressed="true">Steady traffic</button><button class="loop-button" data-mode="degraded" aria-pressed="false">Traffic surge</button><button class="loop-button" data-mode="recovery" aria-pressed="false">Recovery</button></div>
+          <p class="loop-caption" id="loop-caption">Flow sharding and NUMA-aware processing keep the fast path efficient while isolation remains explicit.</p>
+        </div>
+        <div class="principles reveal">
+          <article><span class="principle-number mono">A</span><div><h3>Keep the fast path lean</h3><p>DPDK poll-mode drivers, zero-copy techniques, and lock-free queues reduce work per packet.</p></div></article>
+          <article><span class="principle-number mono">B</span><div><h3>Contain noisy neighbors</h3><p>Tenant-aware rate limits, flow sharding, and security policy make multi-tenant behavior more predictable.</p></div></article>
+          <article><span class="principle-number mono">C</span><div><h3>Make failure diagnosable</h3><p>Metrics, packet captures, fault injection, and clear recovery paths connect production symptoms to durable fixes.</p></div></article>
+          <div class="tech-line mono">C/C++ · DPDK · LINUX · GO · RUST · TCP/IP · UDP MULTICAST</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="experience-section section-wrap">
+      <div class="section-heading reveal"><p class="eyebrow">03 <span class="eyebrow-slash">/</span> EXPERIENCE</p><h2>Systems work,<br>measured in the field.</h2><p class="section-intro">From Linux gateways to elastic cloud services, each role has centered on performance under load, recovery under failure, and careful ownership in production.</p></div>
+      <div class="timeline">
+        <article class="role-card reveal"><div class="role-meta"><span class="role-marker"></span><div><h3>Sprouts AI</h3><p>Software Engineer <span>/</span> Core Infrastructure and Distributed Systems</p></div><time>MAR 2025 — PRESENT</time></div><ul>
+          <li>Sustained sub-200 ms p95 latency at 5x peak traffic as measured by service telemetry by architecting horizontally and vertically scalable, elastic C++ and Go services on Kubernetes that scale both up and down, with distributed state management on Redis and etcd.</li>
+          <li>Held 99.99% availability through network partitions and dependency brownouts as measured by SLO dashboards by implementing load-shedding, throttling, token-bucket rate-limiting, circuit breakers, and backpressure across high-concurrency request paths.</li>
+          <li>Delivered zero-downtime in-service upgrades with no customer maintenance windows across 30+ releases as measured by release metrics by designing redundancy, active-active replication, automatic failover, and canary rollouts with automated rollback.</li>
+          <li>Reduced MTTR 45% as measured by postmortems by defining KPIs and telemetry, building Prometheus and Grafana dashboards, proactive alerting, and OpenTelemetry distributed tracing, and leading operational support rotations, incident response, and root cause analysis.</li>
+          <li>Shipped 0 Sev-1 correctness regressions as measured by incident records by designing fault-injection, brown-out, and load testing scenarios, enforcing encryption and IAM access controls for multi-tenant data, and verifying replication and synchronization integrity.</li>
+        </ul></article>
+        <article class="role-card reveal"><div class="role-meta"><span class="role-marker"></span><div><h3>Resilience Inc</h3><p>Software Engineer <span>/</span> Cloud Infrastructure and Data Plane Networking</p></div><time>AUG 2023 — MAR 2025</time></div><ul>
+          <li>Increased packet processing throughput 3.2x to 12 Mpps per core with p99 under 20 µs as measured by benchmarks by optimizing a high-concurrency C/C++ data plane with DPDK poll-mode drivers, hugepages, lock-free ring buffers, RSS flow sharding, and NUMA pinning on Linux.</li>
+          <li>Protected 99.99% uptime across multi-region cloud infrastructure as measured by SLO reporting by building fault-tolerant L4/L7 load balancing components with health checking, flow and session state replication, and automatic failover across availability domains.</li>
+          <li>Prevented overload during volumetric spikes and network unreliability as measured by 0 SLO breaches over 4 major traffic surges by implementing adaptive load-shedding, per-tenant throttling, and rate-limiting at the data plane edge.</li>
+          <li>Cut rollout time 60% with zero high-impact regressions as measured by release metrics by developing Infrastructure as Code (Terraform, Ansible) and CI/CD automation for safe patching, updates, and rollbacks within change management plans.</li>
+          <li>Closed 100% of high-severity security findings within SLA as measured by audit reports by enforcing TLS 1.3 and IPsec encryption, ACL-based access controls, and industry-standard compliance controls in multi-tenant networking services.</li>
+        </ul></article>
+        <article class="role-card reveal"><div class="role-meta"><span class="role-marker"></span><div><h3>Tata Steel</h3><p>Software Engineer <span>/</span> C/C++ Systems and Infrastructure Reliability</p></div><time>APR 2018 — AUG 2023</time></div><ul>
+          <li>Delivered 40% lower latency and 3x throughput headroom as measured by load and stress testing by rewriting high-volume C/C++ services on Linux with epoll-based non-blocking I/O, thread pools, and memory-pool allocators.</li>
+          <li>Reduced packet loss 70% on plant-floor telemetry networks as measured by NIC counters by developing Linux kernel modules and character device drivers and tuning interrupt coalescing and IRQ affinity on industrial gateway devices.</li>
+          <li>Met durability and availability SLOs as measured by quarterly reliability reviews by designing data replication, synchronization, retries, timeouts, and automatic failover for distributed services across 4 plant data centers.</li>
+          <li>Eliminated maintenance windows for 12 critical services as measured by change records by automating patching and rolling updates with Ansible and scripted rollbacks governed by change management plans.</li>
+          <li>Cut repeat incidents 35% as measured by incident trends by debugging production issues with gdb, strace, tcpdump, and perf, leading root cause analysis and operational readiness reviews, and mentoring 6 engineers across geographically distributed teams.</li>
+        </ul></article>
+      </div>
+    </section>
+
+    <section id="projects" class="projects-section section-wrap">
+      <div class="section-heading reveal"><p class="eyebrow">04 <span class="eyebrow-slash">/</span> SELECTED BUILDS</p><h2>Build, measure, learn.</h2><p class="section-intro">Infrastructure, systems, data, and product experiments—each source link opens the project repository or notebook.</p></div>
+      <div class="project-filter reveal" role="group" aria-label="Filter projects"><button class="filter-button active" data-filter="all" aria-pressed="true">All <span>23</span></button><button class="filter-button" data-filter="infrastructure" aria-pressed="false">Infrastructure</button><button class="filter-button" data-filter="data" aria-pressed="false">Data &amp; AI</button><button class="filter-button" data-filter="systems" aria-pressed="false">Systems &amp; apps</button></div>
+      <div class="project-grid">
+        <article class="project-card project-featured reveal" data-category="infrastructure"><div class="project-topline"><span class="project-type mono">NETWORKING / INFRASTRUCTURE</span></div><h3>Keystone</h3><p class="project-description">Transactional key-value store for control-plane metadata.</p><div class="project-tags"><span>Go</span><span>storage</span></div><a class="source-link" href="https://github.com/devthedevil/keystone" target="_blank" rel="noreferrer">SourceCode <span>↗</span></a></article>
+        <article class="project-card project-featured reveal" data-category="infrastructure"><div class="project-topline"><span class="project-type mono">NETWORKING / INFRASTRUCTURE</span></div><h3>CME MDP 3.0 Multicast Feed Handler</h3><p class="project-description">C++20 multicast feed handler; resume notes zero-copy decoding and gap recovery at sub-microsecond decode.</p><div class="project-tags"><span>C++20</span><span>DPDK</span><span>Linux</span></div><a class="source-link" href="https://github.com/devthedevil/CME-Multicast-Market-Data-Feed-Handler-C-" target="_blank" rel="noreferrer">SourceCode <span>↗</span></a></article>
+        <article class="project-card reveal" data-category="infrastructure"><div class="project-topline"><span class="project-type mono">NETWORKING / INFRASTRUCTURE</span></div><h3>Strata</h3><p class="project-description">C++ storage server.</p><div class="project-tags"><span>C++</span><span>storage</span></div><a class="source-link" href="https://github.com/devthedevil/strata" target="_blank" rel="noreferrer">SourceCode <span>↗</span></a></article>
+        <article class="project-card reveal" data-category="infrastructure"><div class="project-topline"><span class="project-type mono">NETWORKING / INFRASTRUCTURE</span></div><h3>Oxide-HV</h3><p class="project-description">Rust hypervisor project.</p><div class="project-tags"><span>Rust</span><span>hypervisor</span></div><div class="project-links"><a class="source-link" href="https://github.com/devthedevil/oxide-hv" target="_blank" rel="noreferrer">SourceCode <span>↗</span></a><a class="demo-link" href="https://oxide-hv.vercel.app/" target="_blank" rel="noreferrer">Technical Demo <span>↗</span></a></div></article>
+        <article class="project-card reveal" data-category="systems"><div class="project-topline"><span class="project-type mono">SYSTEMS / LOW LEVEL</span></div><h3>Character Device Driver</h3><p class="project-description">Linux character-device driver project.</p><div class="project-tags"><span>Linux</span><span>kernel</span></div><a class="source-link" href="https://github.com/devthedevil/Character-Device-Driver" target="_blank" rel="noreferrer">SourceCode <span>↗</span></a></article>
+        <article class="project-card reveal" data-category="systems"><div class="project-topline"><span class="project-type mono">SYSTEMS / LOW LEVEL</span></div><h3>Experimental Operating System</h3><p class="project-description">EXPOS experimental operating-system project.</p><div class="project-tags"><span>Operating systems</span></div><a class="source-link" href="https://github.com/devthedevil/EXPOS" target="_blank" rel="noreferrer">SourceCode <span>↗</span></a></article>
+        <article class="project-card reveal" data-category="systems"><div class="project-topline"><span class="project-type mono">SYSTEMS / LOW LEVEL</span></div><h3>16-Bit RISC Processor</h3><p class="project-description">16-bit RISC processor project.</p><div class="project-tags"><span>Computer architecture</span></div><a class="source-link" href="https://github.com/devthedevil/Hardware-lab" target="_blank" rel="noreferrer">SourceCode <span>↗</span></a></article>
+        <article class="project-card reveal" data-category="data"><div class="project-topline"><span class="project-type mono">DATA / APPLICATIONS</span></div><h3>Real-time Stock Market Analysis Pipeline</h3><p class="project-description">Real-time market-analysis pipeline.</p><div class="project-tags"><span>Data pipeline</span></div><a class="source-link" href="https://github.com/devthedevil/Realtime-Stock-Market-Analysis" target="_blank" rel="noreferrer">SourceCode <span>↗</span></a></article>
+        <article class="project-card reveal" data-category="infrastructure"><div class="project-topline"><span class="project-type mono">NETWORKING / INFRASTRUCTURE</span></div><h3>Voting App</h3><p class="project-description">Kubernetes voting application.</p><div class="project-tags"><span>Kubernetes</span><span>containers</span></div><a class="source-link" href="https://github.com/devthedevil/Kubernetes-K8" target="_blank" rel="noreferrer">SourceCode <span>↗</span></a></article>
+        <article class="project-card reveal" data-category="data"><div class="project-topline"><span class="project-type mono">DATA / APPLICATIONS</span></div><h3>TradeSentinel</h3><p class="project-description">Trading application.</p><div class="project-tags"><span>Application</span></div><div class="project-links"><a class="source-link" href="https://github.com/devthedevil/tradesentinel" target="_blank" rel="noreferrer">SourceCode <span>↗</span></a><a class="demo-link" href="https://tradesentinel.vercel.app/" target="_blank" rel="noreferrer">Technical Demo <span>↗</span></a></div></article>
+        <article class="project-card reveal" data-category="data"><div class="project-topline"><span class="project-type mono">DATA / APPLICATIONS</span></div><h3>AskMyStore</h3><p class="project-description">Store assistant using LangGraph orchestration.</p><div class="project-tags"><span>LangGraph</span><span>orchestration</span></div><div class="project-links"><a class="source-link" href="https://github.com/devthedevil/AskMyStore" target="_blank" rel="noreferrer">SourceCode <span>↗</span></a><a class="demo-link" href="https://ask-my-store.vercel.app/" target="_blank" rel="noreferrer">Technical Demo <span>↗</span></a></div></article>
+        <article class="project-card reveal" data-category="systems"><div class="project-topline"><span class="project-type mono">SYSTEMS / LOW LEVEL</span></div><h3>Strangers</h3><p class="project-description">Social web application.</p><div class="project-tags"><span>Web app</span></div><div class="project-links"><a class="source-link" href="https://github.com/devthedevil/Strangers" target="_blank" rel="noreferrer">SourceCode <span>↗</span></a><a class="demo-link" href="https://strangers-react.vercel.app/" target="_blank" rel="noreferrer">Technical Demo <span>↗</span></a></div></article>
+        <article class="project-card reveal" data-category="systems"><div class="project-topline"><span class="project-type mono">SYSTEMS / LOW LEVEL</span></div><h3>Hire loop</h3><p class="project-description">Hiring application.</p><div class="project-tags"><span>Application</span></div><a class="source-link" href="https://github.com/devthedevil/hireloop" target="_blank" rel="noreferrer">SourceCode <span>↗</span></a></article>
+        <article class="project-card reveal" data-category="data"><div class="project-topline"><span class="project-type mono">DATA / APPLICATIONS</span></div><h3>AgentFlow</h3><p class="project-description">LangChain orchestration project.</p><div class="project-tags"><span>LangChain</span><span>agents</span></div><a class="source-link" href="https://github.com/devthedevil/openAI-Agent-SDK" target="_blank" rel="noreferrer">SourceCode <span>↗</span></a></article>
+        <article class="project-card reveal" data-category="systems"><div class="project-topline"><span class="project-type mono">SYSTEMS / LOW LEVEL</span></div><h3>Tic Tac Toe</h3><p class="project-description">Android game.</p><div class="project-tags"><span>Android</span></div><a class="source-link" href="https://github.com/devthedevil/TicTacToe-Game" target="_blank" rel="noreferrer">SourceCode <span>↗</span></a></article>
+        <article class="project-card reveal" data-category="data"><div class="project-topline"><span class="project-type mono">DATA / APPLICATIONS</span></div><h3>MCP</h3><p class="project-description">Model Context Protocol project.</p><div class="project-tags"><span>MCP</span></div><a class="source-link" href="https://github.com/devthedevil/MCP" target="_blank" rel="noreferrer">SourceCode <span>↗</span></a></article>
+        <article class="project-card reveal" data-category="data"><div class="project-topline"><span class="project-type mono">DATA / APPLICATIONS</span></div><h3>LangChain Chat with Search</h3><p class="project-description">Search-enabled LangChain chat application.</p><div class="project-tags"><span>LangChain</span><span>search</span></div><a class="source-link" href="https://github.com/devthedevil/LangChain-Chat-with-Search" target="_blank" rel="noreferrer">SourceCode <span>↗</span></a></article>
+        <article class="project-card reveal" data-category="data"><div class="project-topline"><span class="project-type mono">DATA / APPLICATIONS</span></div><h3>AeroInvoice</h3><p class="project-description">AI-powered invoice ingestion and quote extraction API.</p><div class="project-tags"><span>AI</span><span>API</span></div><a class="source-link" href="https://github.com/devthedevil/aero-invoice-intelligence" target="_blank" rel="noreferrer">SourceCode <span>↗</span></a></article>
+        <article class="project-card reveal" data-category="systems"><div class="project-topline"><span class="project-type mono">SYSTEMS / LOW LEVEL</span></div><h3>MetalCompositor</h3><p class="project-description">Metal graphics compositor.</p><div class="project-tags"><span>Metal</span><span>graphics</span></div><a class="source-link" href="https://github.com/devthedevil/metal-compositor" target="_blank" rel="noreferrer">SourceCode <span>↗</span></a></article>
+        <article class="project-card reveal" data-category="data"><div class="project-topline"><span class="project-type mono">DATA / APPLICATIONS</span></div><h3>AgentEval</h3><p class="project-description">Agent evaluation project.</p><div class="project-tags"><span>Swift</span><span>evaluation</span></div><a class="source-link" href="https://github.com/devthedevil/swift-agent-evals" target="_blank" rel="noreferrer">SourceCode <span>↗</span></a></article>
+        <article class="project-card reveal" data-category="data"><div class="project-topline"><span class="project-type mono">DATA / APPLICATIONS</span></div><h3>adserve</h3><p class="project-description">Ad serving project.</p><div class="project-tags"><span>Go</span><span>serving</span></div><a class="source-link" href="http://github.com/devthedevil/adserve" target="_blank" rel="noreferrer">SourceCode <span>↗</span></a></article>
+        <article class="project-card reveal" data-category="data"><div class="project-topline"><span class="project-type mono">DATA / APPLICATIONS</span></div><h3>Comparative Study of Movie Recommendation Systems</h3><p class="project-description">Published IEEE paper with source notebook and certificate.</p><div class="project-tags"><span>Research</span><span>feature engineering</span></div><a class="source-link" href="https://github.com/devthedevil/Comparative-Study-of-Movie-Recommendation-System/blob/main/Netflix_Movie.ipynb" target="_blank" rel="noreferrer">SourceCode <span>↗</span></a></article>
+        <article class="project-card reveal" data-category="systems"><div class="project-topline"><span class="project-type mono">SYSTEMS / LOW LEVEL</span></div><h3>Pitch Perfect</h3><p class="project-description">iOS app.</p><div class="project-tags"><span>iOS</span></div><a class="source-link" href="https://github.com/devthedevil/Pitch_Perfect" target="_blank" rel="noreferrer">SourceCode <span>↗</span></a></article>
+      </div>
+      <p class="project-count mono"><span id="visible-project-count">23</span> PROJECTS <span>·</span> SOURCE LINKS OPEN IN A NEW TAB</p>
+    </section>
+
+    <section class="research-section section-wrap">
+      <div class="research-card reveal"><div class="research-copy"><p class="eyebrow">05 <span class="eyebrow-slash">/</span> RESEARCH &amp; CRAFT</p><h2>Curiosity beyond<br>the fast path.</h2><p>I enjoy tracing a system end to end—from a packet at the NIC to behavior across services—and using measurements, tests, and careful debugging to improve what the user experiences.</p><div class="research-links"><a href="https://scholar.google.com/citations?user=VXIu5a4AAAAJ&amp;hl=en" target="_blank" rel="noreferrer">Google Scholar <span>↗</span></a><a href="https://ieeexplore.ieee.org/document/10094480" target="_blank" rel="noreferrer">IEEE publication <span>↗</span></a><a href="https://leetcode.com/u/dev_kumar_dklv/" target="_blank" rel="noreferrer">LeetCode <span>↗</span></a></div></div><div class="research-visual" aria-label="Academic publication details"><div class="paper-grid"></div><span class="paper-label mono">IEEE / PUBLICATION</span><span class="paper-number">01</span><div class="paper-title">Comparative Study of Movie Recommendation Systems using Feature Engineering</div><span class="paper-meta mono">FEATURE ENGINEERING · RECOMMENDER SYSTEMS</span><a class="paper-open" href="https://ieeexplore.ieee.org/document/10094480" target="_blank" rel="noreferrer" aria-label="Open IEEE paper">↗</a></div></div>
+      <div class="education-row reveal"><span class="eyebrow">EDUCATION</span><p><strong>M.S. Computer Science</strong> · Illinois Institute of Technology</p><p><strong>B.S. Computer Science</strong> · National Institute of Technology Calicut</p></div>
+    </section>
+
+    <section class="contact-section section-wrap"><div class="contact-orbit" aria-hidden="true"></div><p class="eyebrow reveal">ENGINEERING THE NETWORKS BEHIND EVERYDAY RELIABILITY</p><h2 class="reveal">Make every packet<br><span>count.</span></h2><div class="contact-actions reveal"><a class="button button-primary" href="https://github.com/devthedevil" target="_blank" rel="noreferrer">Connect on GitHub <span>↗</span></a><a class="button button-quiet" href="https://scholar.google.com/citations?user=VXIu5a4AAAAJ&amp;hl=en" target="_blank" rel="noreferrer">View Google Scholar <span>↗</span></a></div><p class="contact-detail mono reveal">DEV KUMAR <span>/</span> CHICAGO, IL <span>/</span> NETWORKING &amp; SYSTEMS</p></section>
+  </main>
+</body>
+</html>
